@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #1B5E20;">My Product</h1>
+        <div>
+            <input type="text" id="search-input" placeholder="Search for products... ">
+        
+            <select id="select-categories">
+                <option value="">All categories</option>
+            </select>
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+
+            <select id="sort-select">
+                <option value="">Sort by</option>
+                <option value="name">Sort by Name</option>
+                <option value="price">Sort by Price</option>
+                <option value="rating">Sort by Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="cart-section">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"> </ul>
+        <p>Total Quantity: <span id="total-quantity">0</span></p>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+    </section>
+        
+    <hr>
+
+    <main id="products-container"> </main>
+
+  
+    <footer id="pagination-container"> </footer>
+
+
+    <div id="product-modal" style="display: none;">
+        <div class="modal-content">
+            <button id="close-modal">X</button>
+            <div id="modal-details">
+               
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
